@@ -19,10 +19,10 @@
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/elisp"))
 
 (require 'auto-save)
-(setq auto-save-idle 5)
+(setq auto-save-idle 1)
 (auto-save-enable)              ;; 开启自动保存功能
 (setq auto-save-slient t)
-
+(global-set-key (kbd "M-g") 'goto-line)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
